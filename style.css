@@ -8,6 +8,9 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #f5f5f5;
     padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -64,7 +67,6 @@ header img {
 }
 
 #dias div {
-    border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
@@ -104,6 +106,7 @@ footer {
     text-align: center;
     color: white;
     background-color: orange;
+    margin-top: auto;
 }
 
 footer h3{
@@ -114,4 +117,37 @@ footer h3{
 
 footer p{
     font-size: 12px;
+}
+
+
+#contato {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
 }
